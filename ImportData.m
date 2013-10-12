@@ -1,7 +1,7 @@
 close all
 clearvars
 clc
-
+addpath('UseThisData');
 load Northridge.mat
 load ImperialValley.mat
 load SanFernando.mat
@@ -16,16 +16,16 @@ MaxPeriod=30;%seconds
 MaxA=0;
 MinA=0;
 MaxT=0;
-DampingList=[.02,.05,.075];
+DampingList=[.02,.05,.2];
 DampingColors=['r','k','g'];
 FilterOrder=20;
 
 doPlot=true;
-useFilteredSpectra=true;
-doSavePlots=false;
+useFilteredSpectra=false;
+doSavePlots=true;
 
 PlotPrefix='Results';
-SaveType='fig';
+SaveType='jpg';
 
 numQuakes=size(QuakeNames,1);
 numDampings=size(DampingList,2);
