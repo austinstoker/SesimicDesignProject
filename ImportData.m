@@ -1,3 +1,9 @@
+% Austin Stoker 15 Oct 2013,
+% This program integrates earthquake accleration data to find the velocity
+% and displacement histories of the earth quake measurement
+% It also takes the acceleration history and creates response spectra for
+% 2%,5%,20% damping
+
 close all
 clearvars
 clc
